@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "name": "Stas"
+    },
+    {
+      "id": 2,
+      "name": "Igor"
+    },
+    {
+      "id": 3,
+      "name": "Azamat"
+    },
+    {
+      "id": 4,
+      "name": "Ponchik"
+    },
+    {
+      "id": 4,
+      "name": "Ponchik"
+    },
+    {
+      "id": 4,
+      "name": "Ponchik"
+    }
+  ]
+}
