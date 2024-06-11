@@ -1,5 +1,6 @@
 import {useState} from "react"
 
+
 export default function InputForm({title}) {
   const [value, setValue] = useState('');
   function inputHandler(e) {
