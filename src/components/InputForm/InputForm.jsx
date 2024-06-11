@@ -1,5 +1,4 @@
 import {useState} from "react"
-import "./TInputForm.scss"
 
 export default function InputForm({title}) {
   const [value, setValue] = useState('');
