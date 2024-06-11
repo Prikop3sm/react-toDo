@@ -1,7 +1,7 @@
 // import {useEffect, useState} from 'react'
 import TDForm from "../TDForm/TDForm.jsx";
 
-function App() {
+export default function App() {
   // const [data, setData] = useState(0)
   //
   // useEffect(() => {
@@ -21,5 +21,3 @@ function App() {
     </>
   )
 }
-
-export default App
