@@ -1,5 +1,6 @@
 // import {useEffect, useState} from 'react'
 import TDForm from "../TDForm/TDForm.jsx";
+import TDMain from "../TDMain/TDMain.jsx";
 
 export default function App() {
   // const [data, setData] = useState(0)
@@ -18,6 +19,7 @@ export default function App() {
   return (
     <>
       <TDForm/>
+      <TDMain/>
     </>
   )
 }

@@ -3,7 +3,7 @@ export default function AddButton() {
   return (
     //test
   <>
-    <button>Add</button>
+    <input className={"todo__submit"} type={"submit"} value={"Add"}/>
   </>
   )
 }

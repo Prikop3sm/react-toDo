@@ -1,0 +1,9 @@
+.buttons{
+  display: flex;
+  gap: 15px;
+
+  &-item{
+    width: max-content;
+    height: 35px;
+  }
+}

@@ -1,3 +1,14 @@
-.asd{
-  margin-right: 15px;
+.todo{
+
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &-input{
+      width: 200px;
+      height: 25px;
+    }
+  }
+
 }

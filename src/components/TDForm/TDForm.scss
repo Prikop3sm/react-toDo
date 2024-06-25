@@ -1,4 +1,11 @@
-.header{
-  display: flex;
-  align-items: end;
+.todo{
+
+  &__form{
+
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    padding-bottom: 40px;
+    border-bottom: 1px grey solid;
+  }
 }
