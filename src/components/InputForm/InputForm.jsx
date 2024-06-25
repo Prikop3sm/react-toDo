@@ -1,6 +1,6 @@
 import {useState} from "react"
 
-export default function InputForm({title, placeholder}) {
+export default function InputForm({title}) {
   const [value, setValue] = useState('');
   function inputHandler(e) {
     //test
@@ -8,11 +8,11 @@ export default function InputForm({title, placeholder}) {
   }
 
   return (
-    <div className={'todo__inner'}>
+    <div className={'asd'}>
       <h3>
         {title}:
       </h3>
-      <input className={"todo__inner-input"} value={value} onChange={inputHandler} placeholder={placeholder}/>
+      <input value={value} onChange={inputHandler}/>
     </div>
   )
 }
