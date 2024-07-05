@@ -2,6 +2,7 @@ import {useState, useEffect} from "react";
 
 export default function TDList(){
   const [data, setData] = useState(0)
+  // const persons = JSON.stringify(data);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -12,11 +13,16 @@ export default function TDList(){
     fetchData()
   }, [])
 
+
   console.log(data)
   return (
     <>
       <div className={'container'}>
-
+        <div className={"main"}>
+          <ul>
+            {data.map(person => <li key={person.id}>{person.name}</li>)}
+          </ul>
+        </div>
       </div>
     </>
   )
