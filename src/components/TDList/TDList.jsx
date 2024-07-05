@@ -20,7 +20,7 @@ export default function TDList(){
       <div className={'container'}>
         <div className={"main"}>
           <ul>
-            {data.map(person => <li key={person.id}>{person.name}</li>)}
+            {data ? data.map(person => <li key={person.id}>{person.name}</li>) : null}
           </ul>
         </div>
       </div>
