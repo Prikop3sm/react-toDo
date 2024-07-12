@@ -1,14 +1,13 @@
-.todo{
+.asd{
 
-  &__inner{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
-    &-input{
-      width: 200px;
-      height: 25px;
-    }
+  & input{
+    border-radius: 5px;
+    background-color: #646477;
+    width: 200px;
+    height: 25px;
   }
-
 }

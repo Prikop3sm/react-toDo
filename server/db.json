@@ -1,20 +1,20 @@
 {
   "todos": [
     {
-      "id": 1,
-      "name": "Stas"
+      "title": "For example 123",
+      "description": "Stas"
     },
     {
-      "id": 2,
-      "name": "Igor"
+      "title": "For example 123",
+      "description": "Igor"
     },
     {
-      "id": 3,
-      "name": "Azamat"
+      "title": "For example 123",
+      "description": "Azamat"
     },
     {
-      "id": 4,
-      "name": "Ponchik"
+      "title": "For example 123",
+      "description": "Ponchik"
     }
   ]
 }

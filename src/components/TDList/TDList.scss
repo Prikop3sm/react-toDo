@@ -1,0 +1,24 @@
+.main{
+
+  &-list{
+
+    &__item{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #37373d;
+
+    }
+
+    &__title{
+      font-size: 25px;
+    }
+
+    &__description{
+      font-size: 15px;
+      opacity: 50%;
+    }
+  }
+}
