@@ -2,13 +2,16 @@
 
   &-list{
 
+    padding: 20px;
+    background-color: $color-background-grey;
+
     &__item{
       display: flex;
       flex-direction: column;
       gap: 15px;
-      margin-top: 20px;
+      margin-bottom: 20px;
       padding: 20px;
-      background-color: #37373d;
+      background-color: $color-background-todos;
 
     }
 

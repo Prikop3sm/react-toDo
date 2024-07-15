@@ -4,9 +4,11 @@ import InputForm from "../InputForm/InputForm.jsx";
 
 export default function TDForm(){
   return (
+
     //test
     <div className={'container'}>
-      <form className={"todo__form"} onSubmit={(e)=>{
+      <h1 className={"todo__header"}>My ToDos</h1>
+      <form className={"todo__form"} onSubmit={(e) => {
         e.preventDefault();
         console.log("sended")
       }}>

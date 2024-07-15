@@ -1,13 +1,24 @@
-.asd{
+.todo{
 
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  &__form{
 
-  & input{
-    border-radius: 5px;
-    background-color: #646477;
-    width: 200px;
-    height: 25px;
+    &-item{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      & input{
+        border-radius: 5px;
+        background-color: #646477;
+        width: 300px;
+        height: 35px;
+        font-size: 25px;
+        color: $font-color;
+
+        &::placeholder{
+          color: $font-color;
+        }
+      }
+    }
   }
 }

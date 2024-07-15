@@ -1,9 +1,11 @@
 .todo{
 
   &__submit{
-    height: 25px;
+    height: 35px;
     width: 50px;
     background-color: $main-purple-color;
     border: none;
+    font-family: $font-stack-main;
+    font-size: 20px;
   }
 }
