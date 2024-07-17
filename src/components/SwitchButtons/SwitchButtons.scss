@@ -5,10 +5,16 @@
   gap: 15px;
   background-color: $color-background-grey;
 
+
   &-item{
     width: max-content;
     height: 35px;
     background-color: $main-purple-color;
     border: none;
+    font-size: 20px;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
 }

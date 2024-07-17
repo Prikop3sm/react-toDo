@@ -12,7 +12,7 @@ export default function InputForm({title, placeholder}) {
       <h3>
         {title}:
       </h3>
-      <input value={value} onChange={inputHandler} placeholder={placeholder}/>
+      <input value={value} onChange={inputHandler} placeholder={placeholder} name={title}/>
     </div>
   )
 }

@@ -7,5 +7,11 @@
     border: none;
     font-family: $font-stack-main;
     font-size: 20px;
+    
+    &:hover{
+      cursor: pointer;
+      padding: 1px;
+      border: 1px black solid;
+    }
   }
 }
