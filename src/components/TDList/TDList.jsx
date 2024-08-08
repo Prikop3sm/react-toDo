@@ -1,20 +1,9 @@
-import {useState, useEffect} from "react";
+import { useContext} from "react";
+import {TodosContext} from "../../context/todosContext.jsx";
 
 export default function TDList(){
-  const [data, setData] = useState(0)
-  // const persons = JSON.stringify(data);
+  const data = useContext(TodosContext)
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const resp = await fetch('http://localhost:3001/todos')
-      const todos = await resp.json()
-      setData(todos)
-    }
-    fetchData()
-  }, [])
-
-
-  console.log(data)
   return (
     <>
       <div className={'container'}>
