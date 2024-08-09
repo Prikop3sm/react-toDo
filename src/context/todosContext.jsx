@@ -17,6 +17,7 @@ export function TodosProvider({children}) {
 function todosReducer(state, action) {
   switch (action.type) {
     case "addTodo": {
+      localStorage.setItem("todos", JSON.stringify(action.payload));
       return [...state, action.payload]
     }
   }
