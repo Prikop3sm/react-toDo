@@ -2,6 +2,8 @@ import AddButton from "../AddButton/AddButton.jsx";
 import InputForm from "../InputForm/InputForm.jsx";
 import {useContext} from "react";
 import {TodosDispatchContext} from "../../context/todosContext.jsx";
+import { v4 as uuidv4 } from 'uuid';
+uuidv4();
 
 
 export default function TDForm(){
@@ -12,12 +14,15 @@ export default function TDForm(){
     const description = e.target.Description.value;
     const data = {
       title: title,
-      description: description
+      description: description,
+      id: uuidv4()
     }
     dispatch({
       type: "addTodo",
       payload: data
     })
+    e.target.Title.value = '';
+    e.target.Description.value = '';
   }
   return (
 
