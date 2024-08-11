@@ -1,0 +1,25 @@
+.main{
+  &-list{
+    &__button{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+    }
+    &__left{
+      width: 1px;
+      height: 20px;
+      background-color: red;
+      rotate: 45deg;
+      position: absolute;
+      left: 10px;
+    }
+    &__right{
+      width: 1px;
+      height: 20px;
+      background-color: red;
+      rotate: -45deg;
+      position: absolute;
+      left: 10px;
+    }
+  }
+}
