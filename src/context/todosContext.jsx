@@ -1,4 +1,4 @@
-import {createContext, useReducer} from "react";
+import {createContext, useEffect, useReducer} from "react";
 
 export const TodosContext = createContext(null);
 export const TodosDispatchContext = createContext(null);
@@ -6,6 +6,11 @@ export const TodosDispatchContext = createContext(null);
 export function TodosProvider({children}) {
   const initialState = JSON.parse(localStorage.getItem("todos")) || [];
   const [todos, dispatch] = useReducer(todosReducer, initialState);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos])
+
   return (
     <TodosContext.Provider value={todos}>
       <TodosDispatchContext.Provider value={dispatch}>
@@ -18,20 +23,15 @@ function todosReducer(state, action) {
   switch (action.type) {
     case "addTodo":{
 
-      const res = [
+      return [
         ...state,
         action.payload
       ]
-      localStorage.setItem("todos", JSON.stringify(res));
-
-      return res
     }
 
     case "deleteTodo":{
 
-      localStorage.removeItem(action.payload);
-
-      return state.filter(todo => todo.id !== action.payload)
+      return state.filter((todo) => todo.id !== action.payload)
     }
   }
 }

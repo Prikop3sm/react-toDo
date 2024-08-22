@@ -18,10 +18,12 @@ export default function TDForm(){
       description: description,
       id: uuidv4()
     }
+
     dispatch({
       type: "addTodo",
       payload: data
     })
+
     e.target.Title.value = '';
     e.target.Description.value = '';
   }
