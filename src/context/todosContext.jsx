@@ -26,5 +26,12 @@ function todosReducer(state, action) {
 
       return res
     }
+
+    case "deleteTodo":{
+
+      localStorage.removeItem(action.payload);
+
+      return state.filter(todo => todo.id !== action.payload)
+    }
   }
 }

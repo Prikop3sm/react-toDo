@@ -1,9 +1,16 @@
 .main{
   &-list{
+
+    &__item{
+      position: relative;
+    }
     &__button{
       width: 20px;
       height: 20px;
       position: absolute;
+      right: 5%;
+      top: 40%;
+      cursor: pointer;
     }
     &__left{
       width: 1px;
