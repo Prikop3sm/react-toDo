@@ -12,20 +12,26 @@ export default function TDForm(){
     e.preventDefault();
     const title = e.target.Title.value;
     const description = e.target.Description.value;
+    const isEditing = false;
 
     const data = {
       title: title,
       description: description,
+      isEditing: isEditing,
       id: uuidv4()
     }
 
-    dispatch({
-      type: "addTodo",
-      payload: data
-    })
+    if (title){
 
-    e.target.Title.value = '';
-    e.target.Description.value = '';
+      dispatch({
+        type: "addTodo",
+        payload: data
+      })
+
+      e.target.Title.value = '';
+      e.target.Description.value = '';
+    }
+
   }
   return (
 
