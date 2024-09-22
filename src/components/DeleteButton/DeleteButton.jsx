@@ -3,6 +3,7 @@ import {TodosDispatchContext} from "../../context/todosContext.jsx";
 
 export default function DeleteButton({ id }) {
     const dispatch = useContext(TodosDispatchContext);
+
     function onDeleteTodo(){
       dispatch({
         type: "deleteTodo",

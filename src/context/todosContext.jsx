@@ -19,6 +19,7 @@ export function TodosProvider({children}) {
     </TodosContext.Provider>
   )
 }
+
 function todosReducer(state, action) {
   switch (action.type) {
     case "addTodo":{
@@ -36,7 +37,8 @@ function todosReducer(state, action) {
 
     case "editTodo":{
 
-      return
+      console.log(action.payload)
+      return state
     }
 
   }

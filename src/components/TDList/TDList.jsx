@@ -7,8 +7,6 @@ import EditButton from "../EditButton/EditButton.jsx";
 export default function TDList(){
   const data = useContext(TodosContext)
 
-
-
   return (
     <>
       <div className={'container'}>
@@ -17,7 +15,7 @@ export default function TDList(){
             {data ? data.map(item => <li className={"main-list__item"} key={item.id}>
               <h2 className={"main-list__title"}>{item.title}</h2>
               <h3 className={"main-list__description"}>{item.description}</h3>
-              <EditButton/>
+              <EditButton id={item.id}/>
               <DeleteButton id={item.id}/>
             </li> ) : null}
           </ul>
