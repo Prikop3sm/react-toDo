@@ -5,17 +5,17 @@ import EditButton from "../EditButton/EditButton.jsx";
 
 
 export default function TDList(){
-  const data = useContext(TodosContext)
+  const todos = useContext(TodosContext)
 
   return (
     <>
       <div className={'container'}>
         <div className={"main"}>
           <ul className={"main-list"}>
-            {data ? data.map(item => <li className={"main-list__item"} key={item.id}>
+            {todos ? todos.map(item => <li className={"main-list__item"} key={item.id}>
               <h2 className={"main-list__title"}>{item.title}</h2>
               <h3 className={"main-list__description"}>{item.description}</h3>
-              <EditButton id={item.id}/>
+              <EditButton id={item}/>
               <DeleteButton id={item.id}/>
             </li> ) : null}
           </ul>
