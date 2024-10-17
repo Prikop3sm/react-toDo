@@ -7,12 +7,10 @@ export default function EditButton({ id }) {
 
   function onEditTodos(){
     data[0].isEditing = !data[0].isEditing
-    console.log()
     dispatch({
       type: "editTodo",
       payload: id
     })
-
   }
 
   return (
