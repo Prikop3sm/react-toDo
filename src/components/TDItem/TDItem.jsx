@@ -9,15 +9,14 @@ export default function TDItem() {
 
   return (
   <>
-    {todos ?
-      todos.map(item => !item.isEditing ?
+    {!!todos && todos.map(item => !item.isEditing ?
       <li className={"main-list__item"} key={item.id}>
       <h2 className={"main-list__title"}>{item.title}</h2>
       <h3 className={"main-list__description"}>{item.description}</h3>
       <EditButton id={item}/>
       <DeleteButton id={item.id}/>
         {/* eslint-disable-next-line react/jsx-key */}
-    </li>  : <TDForm/> ) : null}
+    </li>  : <TDForm key={item.id}/> )}
   </>
   )
 }

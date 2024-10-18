@@ -1,13 +1,10 @@
 import {v4 as uuidv4} from "uuid";
-import {useContext, useEffect} from "react";
+import {useContext, useState} from "react";
 import {TodosDispatchContext} from "../context/todosContext.jsx";
 
 export const useAddTodo = () => {
   const dispatch = useContext(TodosDispatchContext);
-
-  useEffect(() => {
-    console.log('useAddTodo hook is called');
-  }, []);
+  // const [isEditing, setIsEditing] = useState(false);
 
   function onAddTodos(e) {
     e.preventDefault();

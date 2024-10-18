@@ -3,10 +3,9 @@ import {TodosContext, TodosDispatchContext} from "../../context/todosContext.jsx
 
 export default function EditButton({ id }) {
   const dispatch = useContext(TodosDispatchContext);
-  const data = useContext(TodosContext)
+  // const data = useContext(TodosContext)
 
   function onEditTodos(){
-    data[0].isEditing = !data[0].isEditing
     dispatch({
       type: "editTodo",
       payload: id
