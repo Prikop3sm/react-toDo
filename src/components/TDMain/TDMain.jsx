@@ -1,11 +1,11 @@
 import SwitchButtons from "../SwitchButtons/SwitchButtons.jsx";
-import TDList from "../TDList/TDList.jsx";
+import TDWrapper from "../TDWrapper/TDWrapper.jsx";
 
 export default function TDMain(){
   return (
     <>
       <SwitchButtons/>
-      <TDList/>
+      <TDWrapper/>
     </>
   )
 }
