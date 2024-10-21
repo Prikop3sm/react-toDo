@@ -1,13 +1,15 @@
 import EditButton from "../EditButton/EditButton.jsx";
 import DeleteButton from "../DeleteButton/DeleteButton.jsx";
-import TDForm from "../TDForm/TDForm.jsx";
 import {useState} from "react";
+import InputForm from "../InputForm/InputForm.jsx";
+import StopEditButton from "../StopEditButton/StopEditButton.jsx";
 
 export function TDItem({ todo }) {
   const [isEditing, setIsEditing] = useState(false);
 
   function onStartEditing(){
     setIsEditing(true);
+    console.log(todo.title, todo.description);
   }
 
   if (!isEditing) {
@@ -22,6 +24,10 @@ export function TDItem({ todo }) {
   }
 
   return (
-    <TDForm/>
+    <form className={"main-list__form"}>
+      <InputForm placeholder={"edit title"}/>
+      <InputForm placeholder={"edit description"}/>
+      <StopEditButton/>
+    </form>
   )
 }

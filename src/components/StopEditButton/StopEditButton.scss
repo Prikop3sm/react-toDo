@@ -1,0 +1,32 @@
+.main{
+
+  &-list{
+
+    &__edit{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 7%;
+      top: 40%;
+      cursor: pointer;
+    }
+
+    &__small{
+      width: 1px;
+      height: 10px;
+      background-color: green;
+      rotate: -45deg;
+      position: absolute;
+      top: 8px;
+    }
+
+    &__big{
+      width: 1px;
+      height: 20px;
+      background-color: green;
+      rotate: 45deg;
+      position: absolute;
+      left: 10px;
+    }
+  }
+}

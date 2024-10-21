@@ -1,0 +1,14 @@
+.main{
+
+  &-list{
+
+    &__form{
+      position: relative;
+      display: flex;
+      align-items: end;
+      gap: 15px;
+      padding: 20px 20px;
+
+    }
+  }
+}
