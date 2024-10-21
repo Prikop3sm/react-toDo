@@ -1,16 +1,9 @@
 import EditButton from "../EditButton/EditButton.jsx";
 import DeleteButton from "../DeleteButton/DeleteButton.jsx";
-import {useState} from "react";
-import InputForm from "../InputForm/InputForm.jsx";
-import StopEditButton from "../StopEditButton/StopEditButton.jsx";
+import {useChangeTodos} from "../../hooks/useChangeTodos.jsx";
 
 export function TDItem({ todo }) {
-  const [isEditing, setIsEditing] = useState(false);
-
-  function onStartEditing(){
-    setIsEditing(true);
-    console.log(todo.title, todo.description);
-  }
+  const { isEditing, onChangeTodos, onStartEditing } = useChangeTodos()
 
   if (!isEditing) {
     return (
@@ -24,10 +17,10 @@ export function TDItem({ todo }) {
   }
 
   return (
-    <form className={"main-list__form"}>
-      <InputForm placeholder={"edit title"}/>
-      <InputForm placeholder={"edit description"}/>
-      <StopEditButton/>
+    <form className={"main-list__form"} onSubmit={onChangeTodos}>
+      <input placeholder={"edit title"} defaultValue={todo.title} name={"title"} id={'title'}/>
+      <input placeholder={"edit description"} defaultValue={todo.description} name={"description"} id={'description'}/>
+      <input type={"submit"} value={'asd'}/>
     </form>
   )
 }

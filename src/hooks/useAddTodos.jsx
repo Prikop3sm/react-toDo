@@ -9,7 +9,6 @@ export const useAddTodo = () => {
     e.preventDefault();
     const title = e.target.Title.value;
     const description = e.target.Description.value;
-    // const isEditing = false;
 
     const data = {
       title,
@@ -26,6 +25,7 @@ export const useAddTodo = () => {
       e.target.Title.value = '';
       e.target.Description.value = '';
     }
+
   }
 
   return { onAddTodos };
