@@ -36,9 +36,9 @@ function todosReducer(state, action) {
     }
 
     case "editTodo":{
-
-      console.log(action.payload)
-      return state
+      return state.map(todo =>
+        todo.id === action.payload.id ? { ...todo, ...action.payload } : todo
+      );
     }
 
   }

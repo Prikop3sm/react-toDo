@@ -3,7 +3,7 @@ import DeleteButton from "../DeleteButton/DeleteButton.jsx";
 import {useChangeTodos} from "../../hooks/useChangeTodos.jsx";
 
 export function TDItem({ todo }) {
-  const { isEditing, onChangeTodos, onStartEditing } = useChangeTodos()
+  const { isEditing, onChangeTodos, onStartEditing } = useChangeTodos(todo)
 
   if (!isEditing) {
     return (

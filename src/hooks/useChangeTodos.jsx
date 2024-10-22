@@ -1,10 +1,28 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
+import {TodosDispatchContext} from "../context/todosContext.jsx";
 
-export const useChangeTodos = () => {
+export const useChangeTodos = (todo) => {
   const [isEditing, setIsEditing] = useState(false);
+  const dispatch = useContext(TodosDispatchContext);
+
 
   function onChangeTodos(e) {
     e.preventDefault()
+    const title = e.target.title.value;
+    const description = e.target.description.value;
+    const id = todo.id;
+
+    const data = {
+      title,
+      description,
+      id
+    }
+
+    dispatch({
+      type: "editTodo",
+      payload: data, id
+    })
+
     setIsEditing(false)
   }
 
