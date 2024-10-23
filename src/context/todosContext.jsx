@@ -41,5 +41,15 @@ function todosReducer(state, action) {
       );
     }
 
+    case "sort a-z":{
+      state.sort((a, b) => a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1);
+      return state.map(todo => todo)
+    }
+
+    case "sort z-a":{
+      state.sort((a, b) => a.title.toLowerCase() < b.title.toLowerCase() ? 1 : -1);
+      return state.map(todo => todo)
+    }
+
   }
 }

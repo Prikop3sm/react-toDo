@@ -1,10 +1,10 @@
-import SwitchButtons from "../SwitchButtons/SwitchButtons.jsx";
+import SortButtons from "../SortButtons/SortButtons.jsx";
 import TDWrapper from "../TDWrapper/TDWrapper.jsx";
 
 export default function TDMain(){
   return (
     <>
-      <SwitchButtons/>
+      <SortButtons/>
       <TDWrapper/>
     </>
   )

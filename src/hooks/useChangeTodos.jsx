@@ -5,12 +5,13 @@ export const useChangeTodos = (todo) => {
   const [isEditing, setIsEditing] = useState(false);
   const dispatch = useContext(TodosDispatchContext);
 
-
   function onChangeTodos(e) {
     e.preventDefault()
     const title = e.target.title.value;
     const description = e.target.description.value;
     const id = todo.id;
+
+    if (title){
 
     const data = {
       title,
@@ -24,6 +25,7 @@ export const useChangeTodos = (todo) => {
     })
 
     setIsEditing(false)
+    }
   }
 
   function onStartEditing(){
