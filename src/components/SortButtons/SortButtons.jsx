@@ -1,18 +1,10 @@
-import {useContext} from "react";
-import {TodosDispatchContext} from "../../context/todosContext.jsx";
-
 export default function SortButtons(){
-  const dispatch = useContext(TodosDispatchContext)
 
   function onAZSort(){
-    dispatch({
-      type: "sort a-z"
-    })
+    localStorage.setItem("sort", "a-z")
   }
   function onZASort(){
-    dispatch({
-      type: "sort z-a"
-    })
+    localStorage.setItem("sort", "z-a")
   }
 
   return (

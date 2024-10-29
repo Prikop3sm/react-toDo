@@ -1,0 +1,94 @@
+.main {
+
+  &-list {
+
+    &__checkbox {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 17%;
+      left: 1%;
+      cursor: pointer;
+    }
+
+    &__checkboxLeft {
+      position: absolute;
+      width: 1px;
+      height: 20px;
+      background-color: red;
+    }
+
+    &__checkboxTop {
+      position: absolute;
+      width: 1px;
+      height: 20px;
+      background-color: red;
+      rotate: 90deg;
+      bottom: 50%;
+      left: 50%;
+    }
+
+    &__checkboxRight {
+      position: absolute;
+      width: 1px;
+      height: 20px;
+      background-color: red;
+      left: 100%;
+    }
+
+    &__checkboxBottom {
+      position: absolute;
+      width: 1px;
+      height: 20px;
+      background-color: red;
+      rotate: 90deg;
+      top: 50%;
+      left: 50%;
+    }
+
+
+    &__small {
+      width: 1px;
+      height: 10px;
+      background-color: green;
+      rotate: -45deg;
+      position: absolute;
+      bottom: 10px;
+      scale: 0;
+      transition-duration: 300ms;
+      left: 3px;
+
+      &:hover{
+        scale: 1.5;
+      }
+    }
+
+    &__big {
+      width: 1px;
+      height: 20px;
+      background-color: green;
+      rotate: 45deg;
+      position: absolute;
+      left: 18px;
+      scale: 0;
+      bottom: 11px;
+      transition-duration: 300ms;
+
+      &:hover{
+
+        scale: 1.5;
+      }
+    }
+
+    &__green{
+      &:hover{
+
+        scale: 1.5;
+      }
+    }
+  }
+}
+
+.active{
+  scale: 1.5;
+}

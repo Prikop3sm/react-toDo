@@ -32,5 +32,9 @@ export const useChangeTodos = (todo) => {
     setIsEditing(true);
   }
 
-  return { isEditing, onChangeTodos, onStartEditing }
+  function onCancelEditing(){
+    setIsEditing(false)
+  }
+
+  return { isEditing, onChangeTodos, onStartEditing, onCancelEditing }
 }

@@ -1,8 +1,18 @@
-import  {useContext} from "react";
-import {TodosContext} from "../../context/todosContext.jsx";
+import {useContext, useEffect} from "react";
+import {TodosContext, TodosDispatchContext} from "../../context/todosContext.jsx";
 import {TDItem} from "../TDItem";
+
+
+
 export default function TDList() {
-  const todos = useContext(TodosContext)
+  const todos = useContext(TodosContext);
+  const dispatch = useContext(TodosDispatchContext);
+
+  useEffect(() => {
+    dispatch({
+      type: `${localStorage.getItem("sort")}`
+    })
+  }, [todos, dispatch]);
 
   return (
   <>

@@ -7,26 +7,19 @@
       height: 20px;
       position: absolute;
       right: 7%;
-      top: 40%;
+      top: 39%;
       cursor: pointer;
     }
 
-    &__small{
-      width: 1px;
-      height: 10px;
-      background-color: green;
-      rotate: -45deg;
-      position: absolute;
-      top: 8px;
-    }
-
-    &__big{
-      width: 1px;
-      height: 20px;
-      background-color: green;
-      rotate: 45deg;
-      position: absolute;
-      left: 10px;
+    &__pencil{
+      width: 23px;
+      height: 23px;
+      background-image: url(https://img.icons8.com/?size=24&id=sKp0dy2A108d&format=png);
+      background-color: transparent;
+      border: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      color: red;
     }
   }
 }
