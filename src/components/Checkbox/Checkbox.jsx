@@ -1,5 +1,4 @@
-export default function Checkbox() {
-
+export function Checkbox() {
   return (
     <div className={"main-list__checkbox"}>
       <div className={"main-list__checkboxLeft"}></div>
@@ -9,6 +8,5 @@ export default function Checkbox() {
       <div className={"main-list__small"}></div>
       <div className={"main-list__big"}></div>
     </div>
-
   )
 }

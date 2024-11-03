@@ -1,14 +1,12 @@
-import TDList from "../TDList/TDList.jsx";
+import { TDList } from "../TDList"
 
-export default function TDWrapper(){
-
+export function TDWrapper() {
   return (
-
     <>
-      <div className={'container'}>
+      <div className={"container"}>
         <div className={"main"}>
           <ul className={"main-list"}>
-            <TDList/>
+            <TDList />
           </ul>
         </div>
       </div>

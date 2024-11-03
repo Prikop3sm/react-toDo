@@ -1,1 +1,1 @@
-export {TDItem} from "./TDItem.jsx"
+export { TDItem } from "./TDItem.jsx"

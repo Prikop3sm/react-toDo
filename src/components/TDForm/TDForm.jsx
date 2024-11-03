@@ -1,19 +1,20 @@
-import AddButton from "../AddButton/AddButton.jsx";
-import InputForm from "../InputForm/InputForm.jsx";
-import { useAddTodo } from "../../hooks/useAddTodos.jsx";
+import { AddButton } from "../AddButton"
+import { InputForm } from "../InputForm"
+import { useAddTodo } from "../../hooks"
 
-
-export default function TDForm(){
-  const { onAddTodos } = useAddTodo();
+export function TDForm() {
+  const { onAddTodos } = useAddTodo()
 
   return (
-
-    <div className={'container'}>
+    <div className={"container"}>
       <h1 className={"todo__header"}>My ToDos</h1>
       <form className={"todo__form"} onSubmit={onAddTodos}>
-        <InputForm title={"Title"} placeholder={"type here title"}/>
-        <InputForm title={"Description"} placeholder={"type here description"}/>
-        <AddButton/>
+        <InputForm title={"Title"} placeholder={"type here title"} />
+        <InputForm
+          title={"Description"}
+          placeholder={"type here description"}
+        />
+        <AddButton />
       </form>
     </div>
   )

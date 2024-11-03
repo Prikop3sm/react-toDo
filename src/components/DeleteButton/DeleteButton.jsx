@@ -1,15 +1,12 @@
-import {useContext} from "react";
-import {TodosDispatchContext} from "../../context/todosContext.jsx";
+import { useContext } from "react"
+import { TodosDispatchContext } from "../../context/todosContext/context.jsx"
+import { deleteTodoAction } from "../../context/todosContext/actions.js"
 
-export default function DeleteButton({ id }) {
-    const dispatch = useContext(TodosDispatchContext);
+export function DeleteButton({ id }) {
+  const dispatch = useContext(TodosDispatchContext)
 
-    function onDeleteTodo(){
-      dispatch({
-        type: "deleteTodo",
-        payload: id
-      })
-
+  function onDeleteTodo() {
+    dispatch(deleteTodoAction(id))
   }
 
   return (
