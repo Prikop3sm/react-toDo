@@ -6,9 +6,11 @@
       position: absolute;
       width: 20px;
       height: 20px;
-      top: 17%;
+      top: 31%;
       left: 1%;
       cursor: pointer;
+      transition-duration: 300ms;
+
     }
 
     &__checkboxLeft {
@@ -46,6 +48,14 @@
       left: 50%;
     }
 
+    &__undo{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 36%;
+      left: 1%;
+      cursor: pointer;
+    }
 
     &__small {
       width: 1px;
@@ -54,7 +64,7 @@
       rotate: -45deg;
       position: absolute;
       bottom: 10px;
-      scale: 0;
+      scale: 1.5;
       transition-duration: 300ms;
       left: 3px;
 
@@ -70,7 +80,7 @@
       rotate: 45deg;
       position: absolute;
       left: 18px;
-      scale: 0;
+      scale: 1.5;
       bottom: 11px;
       transition-duration: 300ms;
 
