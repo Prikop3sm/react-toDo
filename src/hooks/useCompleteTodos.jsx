@@ -7,16 +7,9 @@ export const useCompleteTodos = (todo) => {
     let isComplete = todo.isComplete
 
     function toggleCompleteTodo() {
-        const title = todo.title
-        const description = todo.description
-        const id = todo.id
-        isComplete = !isComplete
-
         const data = {
-            title,
-            description,
-            isComplete,
-            id,
+            ...todo,
+            isComplete: !isComplete,
         }
         dispatch(completeTodoAction(data))
     }

@@ -18,12 +18,9 @@ export function TDList() {
     return (
         <>
             {!!filteredTodos &&
-                filteredTodos.map(
-                    (item) =>
-                        typeof item === "object" && (
-                            <TDItem key={item.id} todo={item} />
-                        )
-                )}
+                filteredTodos.map((item) => (
+                    <TDItem key={item.id} todo={item} />
+                ))}
         </>
     )
 }

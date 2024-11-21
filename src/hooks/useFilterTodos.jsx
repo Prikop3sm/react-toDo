@@ -23,13 +23,13 @@ export const useFilterTodos = () => {
     function onFilterTodos(todos, filter) {
         switch (filter) {
             case completeOnly: {
-                return todos.map((todo) => todo.isComplete === true && todo)
+                return todos.filter((todo) => todo.isComplete === true && todo)
             }
             case nonCompleteOnly: {
-                return todos.map((todo) => todo.isComplete === false && todo)
+                return todos.filter((todo) => todo.isComplete === false && todo)
             }
             case all: {
-                return todos.map((todo) => todo)
+                return todos.filter((todo) => todo)
             }
             default: {
                 return todos.map((todo) => todo)
