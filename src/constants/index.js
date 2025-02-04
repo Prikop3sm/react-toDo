@@ -10,6 +10,8 @@ export const completeTodo = "completeTodo"
 
 export const sortAZ = "a-z"
 export const sortZA = "z-a"
+export const sortNewest = "newest"
+export const sortOldest = "oldest"
 
 export const completeOnly = "completeOnly"
 export const nonCompleteOnly = "nonCompleteOnly"

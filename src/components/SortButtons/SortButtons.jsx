@@ -1,7 +1,7 @@
 import { useSortTodos } from "../../hooks"
 
 export function SortButtons() {
-    const { onAZSort, onZASort } = useSortTodos()
+    const { onAZSort, onZASort, onNewestSort, onOldestSort } = useSortTodos()
 
     return (
         <div className={"buttons__sort"}>
@@ -10,6 +10,12 @@ export function SortButtons() {
             </button>
             <button className={"buttons-item"} onClick={onZASort}>
                 sort Z-A
+            </button>
+            <button className={"buttons-item"} onClick={onNewestSort}>
+                newest 1st
+            </button>
+            <button className={"buttons-item"} onClick={onOldestSort}>
+                oldest 1st
             </button>
         </div>
     )

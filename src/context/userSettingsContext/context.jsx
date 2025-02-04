@@ -37,6 +37,18 @@ function todosReducer(state, action) {
                 sort: "z-a",
             }
         }
+        case "newest": {
+            return {
+                ...state,
+                sort: "newest",
+            }
+        }
+        case "oldest": {
+            return {
+                ...state,
+                sort: "oldest",
+            }
+        }
 
         case "completeOnly": {
             return {

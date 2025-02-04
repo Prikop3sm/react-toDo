@@ -10,11 +10,15 @@ export const useAddTodo = () => {
         e.preventDefault()
         const title = e.target.Title.value
         const description = e.target.Description.value
+        const date = Date.now()
+        const normalDate = `${new Date(date).toISOString().slice(0, 10).split("-").reverse().join(".")}`
         const isComplete = false
 
         const data = {
             title,
             description,
+            date,
+            normalDate,
             isComplete,
             id: uuidv4(),
         }

@@ -8,6 +8,12 @@ export function TDItem({ todo }) {
     const { isEditing, onChangeTodos, onStartEditing, onCancelEditing } =
         useChangeTodos(todo)
     const { toggleCompleteTodo, isComplete } = useCompleteTodos(todo)
+    const asdDate = `${new Date(todo.date)
+        .toISOString()
+        .slice(0, 10)
+        .split("-")
+        .reverse()
+        .join(".")} ${new Date(todo.date).toISOString().slice(11, 19)}`
 
     if (!isEditing) {
         return (
@@ -18,6 +24,7 @@ export function TDItem({ todo }) {
                 />
                 <h2 className={"main-list__title"}>{todo.title}</h2>
                 <h3 className={"main-list__description"}>{todo.description}</h3>
+                <h5 className={"main-list__date"}>{asdDate}</h5>
                 <EditButton onStartEditing={onStartEditing} />
                 <DeleteButton id={todo.id} />
             </li>
