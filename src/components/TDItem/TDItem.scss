@@ -2,6 +2,11 @@
 
   &-list {
 
+    &__item{
+      position: relative;
+      border-radius: 15px;
+    }
+
     &__form {
       position: relative;
       display: flex;

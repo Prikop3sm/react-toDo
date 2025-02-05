@@ -35,7 +35,7 @@ export function FilterButtons() {
                         className={"buttons-item"}
                         onClick={onFilterCompleteOnly}
                     >
-                        completed only
+                        Completed only
                     </button>
                 </li>
                 <li className={"menu-item"}>
@@ -43,12 +43,12 @@ export function FilterButtons() {
                         className={"buttons-item"}
                         onClick={onFilterNonCompleteOnly}
                     >
-                        non-completed only
+                        Non-completed only
                     </button>
                 </li>
                 <li className={"menu-item"}>
                     <button className={"buttons-item"} onClick={onFilterAll}>
-                        all
+                        All
                     </button>
                 </li>
             </ul>

@@ -1,7 +1,7 @@
 .todo{
 
   &__header{
-
+    margin-top: 50px;
     font-size: 40px;
     text-align: center;
   }
@@ -14,6 +14,9 @@
     padding: 20px 20px;
     border-bottom: 1px grey solid;
     background-color: $color-background-grey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
   }
 
 

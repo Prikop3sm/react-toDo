@@ -1,7 +1,11 @@
 export function AddButton() {
-  return (
-    <>
-      <input className={"todo__submit"} type={"submit"} value={"Add"} />
-    </>
-  )
+    return (
+        <>
+            <input
+                className={"buttons-item todo__submit"}
+                type={"submit"}
+                value={"Add"}
+            />
+        </>
+    )
 }

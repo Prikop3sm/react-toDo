@@ -1,9 +1,10 @@
 .main{
 
   &-list{
-
     padding: 20px;
     background-color: $color-background-grey;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 
     &__item{
       display: flex;
